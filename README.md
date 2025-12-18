@@ -32,7 +32,7 @@
     <img src="images/architecture.png" alt="archi" width="800" height="800">
   </a>
  
-  <h3 align="center">youtube_lakehouse_for_analytics</h3>
+  <h3 align="center">youtube_videos_2025_lakehouse</h3>
 
   <!-- <p align="center">
     An awesome README template to jumpstart your projects!
