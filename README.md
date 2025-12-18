@@ -31,7 +31,7 @@
   <a href="https://github.com/HansDoh2404/youtube_videos_2025_lakehouse.git">
     <img src="images/architecture.png" alt="archi" width="800" height="800">
   </a>
-
+ 
   <h3 align="center">youtube_lakehouse_for_analytics</h3>
 
   <!-- <p align="center">
