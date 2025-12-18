@@ -142,7 +142,7 @@ Lien du projet: https://github.com/HansDoh2404/youtube_videos_2025_lakehouse.git
 [python-url]: https://docs.python.org/3/
 [nessie]: https://img.shields.io/badge/Nessie-green?style=for-the-badge&logo=nesie&logoColor=white
 [nessie-url]: https://docs.python.org/3/
-[spark]: https://img.shields.io/badge/Spark-black?logo=apache-spark
+[spark]: https://img.shields.io/badge/Spark-black?style=for-the-badge&logo=apache-spark
 [spark-url]: https://spark.apache.org/
 [minio]: https://img.shields.io/badge/minio-red?style=for-the-badge&logo=minio&logoColor=white
 [minio-url]: https://docs.min.io/enterprise/aistor-object-store/
