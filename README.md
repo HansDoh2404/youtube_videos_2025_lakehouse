@@ -93,7 +93,11 @@ Outils à installer avant de débuter
    ```sh
    docker exec -it spark-iceberg /bin/bash
 
-   sudo nano /opt/spark/conf/spark-default.conf
+   sudo apt update
+
+   sudo apt install nano -y 
+
+   sudo nano /opt/spark/conf/spark-defaults.conf
 
    -- copier coller le contenu suivant dans le 
    
