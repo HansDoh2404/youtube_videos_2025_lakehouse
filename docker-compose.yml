@@ -362,6 +362,7 @@ services:
       - 8080:8080
       - 10000:10000
       - 10001:10001
+    restart: unless-stopped
 
   nessie:
     image: projectnessie/nessie:latest
@@ -393,12 +394,12 @@ services:
       - minio-data:/data
 
   mc:
-    depends_on:
-      - minio
     image: minio/mc
     container_name: mc
     networks:
       iceberg_net:
+    depends_on:
+      - minio
     environment:
       - AWS_ACCESS_KEY_ID=admin
       - AWS_SECRET_ACCESS_KEY=password
@@ -411,6 +412,24 @@ services:
       /usr/bin/mc policy set public minio/warehouse;
       tail -f /dev/null
       "
+
+  trino:
+    image: trinodb/trino:latest
+    container_name: trino
+    ports:
+      - "8081:8080"
+    depends_on:
+      - nessie
+      - minio
+    volumes:
+      - ./trino-config:/etc/trino
+    networks:
+      iceberg_net:
+    environment:
+      - AWS_ACCESS_KEY_ID=admin
+      - AWS_SECRET_ACCESS_KEY=password
+      - AWS_REGION=us-east-1
+
 networks:
   iceberg_net:
 
