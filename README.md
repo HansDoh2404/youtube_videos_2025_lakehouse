@@ -101,19 +101,19 @@ Outils à installer avant de débuter
 
    -- copier coller le contenu suivant dans le 
    
-    spark.sql.extensions                     org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions,org.projectnessie.spark.extensions.NessieSparkSessionExtensions
-    spark.sql.catalog.nessie                 org.apache.iceberg.spark.SparkCatalog
-    spark.sql.catalog.nessie.type            nessie
-    spark.sql.catalog.nessie.uri             http://nessie:19120/api/v2
-    spark.sql.catalog.nessie.ref             main
-    spark.sql.catalog.nessie.io-impl         org.apache.iceberg.aws.s3.S3FileIO
-    spark.sql.catalog.nessie.warehouse       s3://warehouse/wh/
-    spark.sql.catalog.nessie.s3.endpoint     http://minio:9000
-    spark.sql.defaultCatalog                 nessie
-    spark.eventLog.enabled                   true
-    spark.eventLog.dir                       /home/iceberg/spark-events
-    spark.history.fs.logDirectory            /home/iceberg/spark-events
-    spark.sql.catalogImplementation          in-memory
+  spark.sql.extensions                     org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions
+  spark.sql.catalog.nessie                 org.apache.iceberg.spark.SparkCatalog
+  spark.sql.catalog.nessie.type            nessie
+  spark.sql.catalog.nessie.uri             http://nessie:19120/api/v2
+  spark.sql.catalog.nessie.ref             main
+  spark.sql.catalog.nessie.io-impl         org.apache.iceberg.aws.s3.S3FileIO
+  spark.sql.catalog.nessie.warehouse       s3://warehouse/
+  spark.sql.catalog.nessie.s3.endpoint     http://minio:9000
+  spark.sql.defaultCatalog                 nessie
+  spark.eventLog.enabled                   true
+  spark.eventLog.dir                       /home/iceberg/spark-events
+  spark.history.fs.logDirectory            /home/iceberg/spark-events
+  spark.sql.catalogImplementation          in-memory
    ```
 
   *Se rendre vers http://localhost:8080 pour voir le bucket minio créé* 

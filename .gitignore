@@ -1,3 +1,7 @@
 .env
 logs
 dags/__pycache__
+jars/
+jars.
+logs/
+logs.
